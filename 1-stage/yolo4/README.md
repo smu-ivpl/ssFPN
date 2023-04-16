@@ -6,7 +6,7 @@
 [![paper](https://img.shields.io/badge/paper-PDF-<COLOR>.svg)](https://arxiv.org/abs/2208.11533)
 
 ----------------------------
-This is the implementation of Scaled-YOLOv4-P6-s2 (scale sequence) using PyTorch framwork.
+[Download other pre-trained models.](https://drive.google.com/drive/folders/17pTfcEsxAX6YGbuclQJqGCJ-_NvAznk2?usp=share_link)
 
 
 | Model | Test Size | AP<sup>test</sup> | AP<sub>50</sub><sup>test</sup> | AP<sub>75</sub><sup>test</sup> | AP<sub>S</sub><sup>test</sup> | AP<sub>M</sub><sup>test</sup> | AP<sub>L</sub><sup>test</sup> | weights |
