@@ -6,46 +6,29 @@
 [![paper](https://img.shields.io/badge/paper-PDF-<COLOR>.svg)](https://arxiv.org/abs/2208.11533)
 
 <p align="center">
-<img src="img/img2.jpg" width="80%" height="80%">
+<img src="imgs/img2.jpg" width="80%" height="80%">
 
-<img src="img/img1.jpg" width="90%" height="90%">
+<img src="imgs/img1.jpg" width="90%" height="90%">
 </p>
 
 ----------------------------
-This is the implementation of Scaled-YOLOv4-P6-s2 (scale sequence) using PyTorch framwork.   
-[Download other pre-trained models.](https://drive.google.com/drive/folders/17pTfcEsxAX6YGbuclQJqGCJ-_NvAznk2?usp=share_link)
-
-
-| Model | Test Size | AP<sup>test</sup> | AP<sub>50</sub><sup>test</sup> | AP<sub>75</sub><sup>test</sup> | AP<sub>S</sub><sup>test</sup> | AP<sub>M</sub><sup>test</sup> | AP<sub>L</sub><sup>test</sup> | weights |
-| :-- | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | 
-| **YOLOv4-P5** | 896 | **51.4%** | **69.9%** | **56.3%** | **33.1%** | **55.4%** | **62.4%** | [`yolov4-p5.pt`](https://drive.google.com/file/d/1BeGRkDcguegEWIAkDpySL7pN5NXCC0Nu/view?usp=share_link) |
-| **YOLOv4-P5-s2** | 896 | **52.3%** | **70.7%** | **57.4%** | **34.2%** | **56.2%** | **63.7%** | [`yolov4-p5-s2.pt`](https://drive.google.com/file/d/1YQvzz-IIAiWtw03YlyEbOcyoV-9l5NAZ/view?usp=share_link) |
-|  |  |  |  |  |  |  |
-
-| Model | Test Size | AP<sup>test</sup> | AP<sub>50</sub><sup>test</sup> | AP<sub>75</sub><sup>test</sup> | AP<sub>S</sub><sup>test</sup> | AP<sub>M</sub><sup>test</sup> | AP<sub>L</sub><sup>test</sup> | weights |
-| :-- | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | 
-| **YOLOv4-P6** | 1280 | **54.3%** | **72.3%** | **59.5%** | **36.6%** | **58.2%** | **65.5%** | [`yolov4-p6.pt`](https://drive.google.com/file/d/1XICoQuuenSI16HEyjJ6FGnZytCM0RJ5p/view?usp=share_link) |
-| **YOLOv4-P6-s2** | 1280 | **54.8%** | **72.8%** | **60.0%** | **37.7%** | **58.5%** | **65.9%** | [`yolov4-p6-s2.pt`](https://drive.google.com/file/d/13VeJdioOd5gqOfcWTQeLcE0R4Uuy3QvE/view?usp=share_link) |
-|  |  |  |  |  |  |  |
-
 
 ## Installation
-
 ```
-# download COCO dataset: ../coco
+# download COCO dataset
 
-# create the docker container, you can change the share memory size if you have more.
-nvidia-docker run --name yolov4_csp -it -v your_coco_path/:/coco/ -v your_code_path/:/yolo --shm-size=64g nvcr.io/nvidia/pytorch:20.06-py3
+git clone https://github.com/wisetrue95/ssFPN.git
+
+cd yolo4
 
 # install mish-cuda, if you use different pytorch version, you could try https://github.com/thomasbrandon/mish-cuda
-cd /
 git clone https://github.com/JunnYu/mish-cuda
 cd mish-cuda
 python setup.py build install
 
-# go to code folder
-cd /yolo
+cd ..
 ```
+
 ### Environment
 - Ubuntu 18.04 with Tesla V100
 - Cuda 10.2
