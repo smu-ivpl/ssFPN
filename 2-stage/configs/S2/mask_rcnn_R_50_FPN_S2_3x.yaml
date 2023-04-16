@@ -1,0 +1,11 @@
+_BASE_: "../Base-RCNN-FPN-S2.yaml"
+MODEL:
+  WEIGHTS: "ckp/mask-rcnn-r50-fpn-3x-41.pkl"
+  MASK_ON: True
+  RESNETS:
+    DEPTH: 50
+SOLVER:
+  STEPS: (210000, 250000)
+  MAX_ITER: 270000
+
+#OUTPUT_DIR : "./output/foldername"

@@ -1,0 +1,13 @@
+_BASE_: "../Base-RCNN-FPN-S2.yaml"
+MODEL:
+  WEIGHTS: "/home/hjpark/OBD/detectron2/ckp/faster-rcnn-r101-fpn-3x-42.pkl"
+  MASK_ON: False
+  RESNETS:
+    DEPTH: 101
+SOLVER:
+  STEPS: (210000, 250000)
+  MAX_ITER: 270000
+  IMS_PER_BATCH: 8
+
+
+OUTPUT_DIR : "./output/frcnn_S2_r101_3x"

@@ -1,0 +1,17 @@
+_BASE_: "../Base-RCNN-FPN-S2.yaml"
+MODEL:
+  WEIGHTS: "ckp/cascade-mask-rcnn-r50-fpn-3x-44.3.pkl"
+  MASK_ON: True
+  RESNETS:
+    DEPTH: 50
+  ROI_HEADS:
+    NAME: CascadeROIHeads
+  ROI_BOX_HEAD:
+    CLS_AGNOSTIC_BBOX_REG: True
+  RPN:
+    POST_NMS_TOPK_TRAIN: 2000
+SOLVER:
+  STEPS: (210000, 250000)
+  MAX_ITER: 270000
+
+#OUTPUT_DIR : "./output/foldername"

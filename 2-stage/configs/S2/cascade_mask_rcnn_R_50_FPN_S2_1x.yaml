@@ -1,0 +1,12 @@
+_BASE_: "../Base-RCNN-FPN-S2.yaml"
+MODEL:
+  WEIGHTS: "ckp/cascade-mask-rcnn-r50-fpn-42.1.pkl"
+  MASK_ON: True
+  RESNETS:
+    DEPTH: 50
+  ROI_HEADS:
+    NAME: CascadeROIHeads
+  ROI_BOX_HEAD:
+    CLS_AGNOSTIC_BBOX_REG: True
+  RPN:
+    POST_NMS_TOPK_TRAIN: 2000
