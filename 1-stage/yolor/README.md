@@ -10,12 +10,12 @@ pip install -r requirements.txt
 ```
 [Download other pre-trained models.](https://drive.google.com/drive/folders/17pTfcEsxAX6YGbuclQJqGCJ-_NvAznk2?usp=share_link)
 
-## Test COCO validation
+### Test COCO validation
 ```
 python test.py --data data/coco.yaml --img 1280 --batch 32 --conf 0.001 --iou 0.65 --device 0 --name [name]
 ```
 
-## Training
+### Training
 
 ```
 # yolov4-p6-s2
