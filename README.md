@@ -1,4 +1,4 @@
-# ssFPN (DNA+Drone Project 2022)
+# ssFPN: Scale Sequence (S^2) Feature Based-Feature Pyramid Network
 #### Hye-Jin Park, Youg-Ju Choi, Young-Woon Lee, and Byung-Gyu Kim
 #### Intelligent Vision Processing Lab. (IVPL), Sookmyung Women's University, Seoul, Republic of Korea
 ----------------------------
