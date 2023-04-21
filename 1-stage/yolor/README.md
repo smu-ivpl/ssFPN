@@ -1,4 +1,4 @@
-## YOLOR + S^2 Feature
+## YOLOR + S<sup>2</sup> Feature
 
 
 ### Environment
