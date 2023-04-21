@@ -17,7 +17,7 @@
 ```
 # download COCO dataset
 
-git clone https://github.com/wisetrue95/ssFPN.git
+git clone https://github.com/smu-ivpl/ssFPN.git
 
 cd yolo4
 
