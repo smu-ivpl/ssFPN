@@ -1,4 +1,4 @@
-# Feature-level Super Resolution based on Scale Sequence (S^2) Feature
+# Feature-level Super Resolution based on Scale Sequence (S<sup>2</sup>) Feature
 
 <p align="center">
 <img src="img.jpg" width="80%" height="80%">
